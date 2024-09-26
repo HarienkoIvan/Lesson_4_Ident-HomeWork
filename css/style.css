@@ -1,0 +1,146 @@
+
+/* Обнуление стилей */
+*,
+*::before *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,body {
+    height: 100%;
+}
+
+/* По умолчанию 16 рх */
+html {
+    font-size: 16px;
+}
+
+body {
+  line-height: 1;
+}
+
+.wrapper {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+
+/* .......Домашка к уроку 5........... */
+
+
+
+/* Задача №1 */
+/* 4 спана с тектом Привет. Выстроить их с новой строки */
+.block {
+padding: 20px;
+margin: 0px 0px 30px 0px;
+}
+
+
+/* Задача №2 */
+/* Выстроить 3 дива с текстом в ряд. Каждый див не более чем 200px в ширину и не 
+больше чем 200px в высоту. Отступ от границы до контента 15 px.
+*/
+.block_item {
+    display: inline-block;
+    max-height: 200px;
+    max-width: 200px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: aliceblue;
+    vertical-align: middle; 
+}
+
+/* vertical-align: top; Выравнивание блочно-строчных обьектов по верхней линии */ 
+/* vertical-align: middle; Выравнивание блочно-строчных обьектов по центру */ 
+/* vertical-align: bottom; Выравнивание блочно-строчных обьектов по низу */ 
+
+.block_title {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+}
+
+
+.span {
+    display: block;
+}
+
+/* Задача №3 */
+/* Выстроить 4 параграфа с тектом в ряд. Ширига каждого не больше чем 100px
+Отступ между ними 30px, Отступ от границы до конетента 10px.
+*/
+.text {
+    display: inline-block;
+    max-width: 100px;
+    background-color: brown;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0px 30px 0px 0px;
+    vertical-align: top;
+}
+
+
+
+/* Задача №4 */
+/* Два дива с текстом. Нужно нижний насунуть на верхний.
+Отступ от границы до контента 30px.
+*/
+.block_one,
+.block_two {
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.block_one {
+    background-color: blue;
+}
+
+.block_two {
+background-color: cadetblue;
+margin: -50px 0px 0px 0px;
+}
+
+/* Задача№5 */
+/* Спан с большим текстом. Нужно чтоб он был не больше 200 рх по высоте.
+И в нем был вертикальный скрол.
+*/
+.block_span {
+    display: inline-block;
+    background-color: bisque;
+    color: black;
+    font-size: 50px;
+  max-height: 200px;
+  overflow: scroll;
+}
